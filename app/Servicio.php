@@ -3,7 +3,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Servicio extends Model
+class Estudiante extends Model
 {
     protected $fillable = ['titulo', 'descripcion'];
 }

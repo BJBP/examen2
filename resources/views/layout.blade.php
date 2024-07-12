@@ -16,7 +16,7 @@ text-decoration: underline;
 <!-- <tr>
 <th scope="col" class="{{ setActivo('home') }}"><a href="/">Home</a></th>
 <th scope="col" class="{{ setActivo('nosotros') }}"> <a href="nosotros">Nosotros</a></th>
-<th scope="col" class="{{ setActivo('servicios') }}"><a href="servicios">Servicios</a></th>
+<th scope="col" class="{{ setActivo('estudiantes') }}"><a href="estudiantes">Estudiantes</a></th>
 <th scope="col" class="{{ setActivo('contacto') }}"> <a href="contacto">Contacto</a></th>
 </tr> -->
 </thead>

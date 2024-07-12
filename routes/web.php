@@ -1,21 +1,21 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-$servicios= [/*
-    ['titulo' => 'Servicio 01'],
-    ['titulo' => 'Servicio 02'],
-    ['titulo' => 'Servicio 03'],
-    ['titulo' => 'Servicio 04'],
-    ['titulo' => 'Servicio 05'],*/
+$estudiantes= [/*
+    ['titulo' => 'Estudiante 01'],
+    ['titulo' => 'Estudiante 02'],
+    ['titulo' => 'Estudiante 03'],
+    ['titulo' => 'Estudiante 04'],
+    ['titulo' => 'Estudiante 05'],*/
     ];
     Route::view('/', 'home')->name('home');
 Route::view('nosotros', 'nosotros')->name('nosotros');
-Route::get('servicios', 'App\Http\Controllers\ServiciosController@index')->name('servicios.index');
+Route::get('estudiantes', 'App\Http\Controllers\EstudiantesController@index')->name('estudiantes.index');
 Route::view('contacto', 'contacto')->name('contacto');
-Route::get('servicios/crear', 'App\Http\Controllers\ServiciosController@create')->name('servicios.create');
-Route::get('servicios/{id}', 'App\Http\Controllers\ServiciosController@show')->name('servicios.show');
-Route::post('/servicios', 'App\Http\Controllers\ServiciosController@store')->name('servicios.store');
-Route::get('servicios', 'App\Http\Controllers\ServiciosController@index')->name('servicios.index');
+Route::get('estudiantes/crear', 'App\Http\Controllers\EstudiantesController@create')->name('estudiantes.create');
+Route::get('estudiantes/{id}', 'App\Http\Controllers\EstudiantesController@show')->name('estudiantes.show');
+Route::post('/estudiantes', 'App\Http\Controllers\EstudiantesController@store')->name('estudiantes.store');
+Route::get('estudiantes', 'App\Http\Controllers\EstudiantesController@index')->name('estudiantes.index');
 Route::get('personas/crear', 'App\Http\Controllers\personasController@create_personas')->name('personas.create_personas');
 Route::get('personas/{id}', 'App\Http\Controllers\personasController@show')->name('personas.show');
 Route::post('/personas', 'App\Http\Controllers\personasController@store')->name('personas.store');

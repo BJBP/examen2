@@ -35,7 +35,7 @@ class personasController extends Controller
             'nPerEstado' => 'required'
         ]);
         
-        // Almacenamos en la BD usando el modelo Servicio
+        // Almacenamos en la BD usando el modelo Estudiante
         persona::create($camposv);
         
         // Redireccionamos a la vista index para ver el Listado de proyectos

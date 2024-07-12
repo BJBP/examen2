@@ -1,11 +1,11 @@
 @extends('layout')
 
-@section('title', 'Crear Servicio')
+@section('title', 'Crear Estudiante')
 @section('content')
 
 <table cellpadding="3" cellspacing="5">
     <tr>
-        <th colspan="4">Crear nuevo servicio</th>
+        <th colspan="4">Crear nuevo estudiante</th>
     </tr>
     @if ($errors->any())
     <ul>
@@ -15,15 +15,23 @@
     </ul>
 @endif
 
-    <form action="{{ route('servicios.store') }}" method="post">
+    <form action="{{ route('estudiantes.store') }}" method="post">
         @csrf
         <tr>
-            <th>Titulo</th>
-            <td><input type="text" name="titulo"><br>{{$errors->first('titulo')}}</td>
+            <th>nombre</th>
+            <td><input type="text" name="nombre"><br>{{$errors->first('nombre')}}</td>
         </tr>
         <tr>
-            <th>Descripcion</th>
-            <td><input type="text" name="descripcion"><br>{{$errors->first('descripcion')}}</td>
+            <th>curso</th>
+            <td><input type="text" name="curso"><br>{{$errors->first('curso')}}</td>
+        </tr>
+        <tr>
+            <th>nota1</th>
+            <td><input type="text" name="nota1"><br>{{$errors->first('nota1')}}</td>
+        </tr>
+        <tr>
+            <th>nota2</th>
+            <td><input type="text" name="nota2"><br>{{$errors->first('nota2')}}</td>
         </tr>
         <tr>
             <td colspan="2" align="center"><button>Guardar</button></td>

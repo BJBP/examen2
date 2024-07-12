@@ -1,20 +1,20 @@
 @extends('layout')
 
-@section('title', 'Detalle del Servicio')
+@section('title', 'Detalle del Estudiante')
 
 @section('content')
-<h2>Servicios</h2>
+<h2>Estudiantes</h2>
 <table>
     <tr>
-        <th colspan="4">Detalle de Servicios</th>
+        <th colspan="4">Detalle de Estudiantes</th>
     </tr>
     <tr>
         <td>Titulo:</td>
-        <td>{{ $servicio->titulo }}</td>
+        <td>{{ $estudiante->titulo }}</td>
     </tr>
     <tr>
         <td>Descripción:</td>
-        <td>{{ $servicio->descripcion }}</td>
+        <td>{{ $estudiante->descripcion }}</td>
     </tr>
 </table>
 @endsection

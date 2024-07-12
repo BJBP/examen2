@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Servicios2Controller extends Controller
+class Estudiantes2Controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,14 +12,14 @@ class Servicios2Controller extends Controller
     public function index()
     {
 
-            $servicios = [
-            ['titulo' => 'Servicio 01'],
-            ['titulo' => 'Servicio 02'],
-            ['titulo' => 'Servicio 03'],
-            ['titulo' => 'Servicio 04'],
-            ['titulo' => 'Servicio 05'],
+            $estudiantes = [
+            ['titulo' => 'Estudiante 01'],
+            ['titulo' => 'Estudiante 02'],
+            ['titulo' => 'Estudiante 03'],
+            ['titulo' => 'Estudiante 04'],
+            ['titulo' => 'Estudiante 05'],
             ];
-            return view('servicios', compact('servicios'));
+            return view('estudiantes', compact('estudiantes'));
     }
 
     /**
