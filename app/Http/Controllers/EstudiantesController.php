@@ -12,7 +12,7 @@ class EstudiantesController extends Controller
 
         $estudiantes = Estudiante::get();
         $estudiantes = Estudiante::latest()->paginate(10);
-        return view('estudiantes', compact('estudiantes'));
+        return view('estudiante', compact('estudiantes'));
         
     }
     public function show($id) {

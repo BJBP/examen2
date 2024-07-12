@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('estudiantes', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('titulo');
-            $table->text('descripcion');
+            $table->string('nombre');
+            $table->text('curso');
             $table->timestamps();
         });
     }

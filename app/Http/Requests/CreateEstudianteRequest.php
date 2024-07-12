@@ -23,14 +23,18 @@ class CreateEstudianteRequest extends FormRequest
     {
         return [
             //
-            'titulo' => 'required',
-            'descripcion' => 'required'
+            'nombre' => 'required',
+            'curso' => 'required',
+            'nota1' => 'required',
+            'nota2' => 'required'
         ];
     }
     public function messages(){
         return [
-            'titulo.required' => 'Se necesita un título para el estudiante',
-            'descripcion.required' => 'Ingresa una descripción, es necesaria'
+            'nombre.required' => 'Se necesita un nombre para el estudiante',
+            'curso.required' => 'Se necesita un curso para el estudiante',
+            'nota1.required' => 'Se necesita una nota en el campo nota 1 para el estudiante',
+            'nota2.required' => 'Se necesita una nota en el campo nota 2 para el estudiante'
         ];
     }
     

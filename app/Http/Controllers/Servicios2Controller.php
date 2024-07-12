@@ -13,11 +13,11 @@ class Estudiantes2Controller extends Controller
     {
 
             $estudiantes = [
-            ['titulo' => 'Estudiante 01'],
-            ['titulo' => 'Estudiante 02'],
-            ['titulo' => 'Estudiante 03'],
-            ['titulo' => 'Estudiante 04'],
-            ['titulo' => 'Estudiante 05'],
+            ['nombre' => 'Estudiante 01'],
+            ['nombre' => 'Estudiante 02'],
+            ['nombre' => 'Estudiante 03'],
+            ['nombre' => 'Estudiante 04'],
+            ['nombre' => 'Estudiante 05'],
             ];
             return view('estudiantes', compact('estudiantes'));
     }
