@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Servicio;
+use App\Http\Requests\CreateServicioRequest;
 
 class ServiciosController extends Controller
 {
@@ -24,19 +25,15 @@ class ServiciosController extends Controller
         return view('create');
     }
 
-    public function store(){
-        // Recogemos Las variables
-        $camposv = request()->validate([
-            'titulo' => 'required',
-            'descripcion' => 'required'
-        ]);
+    public function store(CreateServicioRequest $request){
+    
+        // Crea el servicio con los datos validados
+        Servicio::create($request->validated());
         
-        // Almacenamos en la BD usando el modelo Servicio
-        Servicio::create($camposv);
-        
-        // Redireccionamos a la vista index para ver el Listado de proyectos
+        // Redirecciona a la vista index para ver el listado de servicios
         return redirect()->route('servicios.index');
     }
+    
     
     
 }    
